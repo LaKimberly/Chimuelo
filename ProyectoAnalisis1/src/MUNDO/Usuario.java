@@ -2,6 +2,23 @@ package MUNDO;
 
 public class Usuario {
 
+	private String cedula;
+	private String nombre;
+	private String contraseña;
+	private String correo;
+	private String telefono;
+	private String direccion;
+
+	public Usuario(String cedula, String nombre, String contraseña, String correo, String telefono, String direccion) {
+		super();
+		this.cedula = cedula;
+		this.nombre = nombre;
+		this.contraseña = contraseña;
+		this.correo = correo;
+		this.telefono = telefono;
+		this.direccion = direccion;
+	}
+
 	public String getCedula() {
 		return cedula;
 	}
@@ -49,22 +66,5 @@ public class Usuario {
 	public void setDireccion(String direccion) {
 		this.direccion = direccion;
 	}
-
-	public Usuario(String cedula, String nombre, String contraseña, String correo, String telefono, String direccion) {
-		super();
-		this.cedula = cedula;
-		this.nombre = nombre;
-		this.contraseña = contraseña;
-		this.correo = correo;
-		this.telefono = telefono;
-		this.direccion = direccion;
-	}
-
-	private String cedula;
-	private String nombre;
-	private String contraseña;
-	private String correo;
-	private String telefono;
-	private String direccion;
 
 }
